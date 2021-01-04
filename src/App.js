@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Today from './Components/TodayComp'
+import Previous from './Components/PreviousDays'
+import Grid from '@material-ui/core/Grid';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <Grid container direction="column" alignItems="center">
+
+        <div>My homework!</div>
+        {/*COMPOSANT TODAY ACTION*/}
+        <Today/>
+        {/*LISTE DES JOURS PASSES*/}
+        <Previous/>
+
+    </Grid>
+
   );
 }
 
