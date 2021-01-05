@@ -10,7 +10,7 @@ export default function Today(){
   const styles= {
     today:{
       width: '100%',
-      border: 'solid black'
+      //border: 'solid black'
     }
   }
 
@@ -35,6 +35,7 @@ export default function Today(){
         })
         .then(function() {
             console.log("Document successfully written!");
+            setValueTodayText('')
         })
         .catch(function(error) {
             console.error("Error writing document: ", error);

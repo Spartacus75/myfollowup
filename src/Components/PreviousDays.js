@@ -7,7 +7,7 @@ export default function Previous(){
 const styles = {
   previous: {
     width: '100%',
-    border: 'solid black'
+    //border: 'solid black'
   }
 }
 
@@ -40,7 +40,7 @@ useEffect(()=>{
 
 return (
   <div style={styles.previous}>
-  Previous days
+  
   <List
   data={dataToDisplay.sort((a, b) => parseFloat(b.timestamp) - parseFloat(a.timestamp))}
   onClickItem={()=>alert('click to edit or delete an item')}

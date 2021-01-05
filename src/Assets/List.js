@@ -36,7 +36,7 @@ export default function SimpleList({data, onClickItem}) {
 {     data.map((item, index) => {return(
         <ListItem button key={index} style={{width: '100%'}} onClick={onClickItem}>
 
-            <div style={{border: 'solid black', width: '100%', borderRadius: 10, padding: 10}}>
+            <div style={{border: 'solid black', width: '100%', borderRadius: 10, padding: 10, backgroundColor:'#f3e0ef'}}>
 
         <p style={{width: 150}}>{item.date}</p>
 
